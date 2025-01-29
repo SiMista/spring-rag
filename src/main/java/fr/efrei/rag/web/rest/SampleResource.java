@@ -10,4 +10,9 @@ public class SampleResource {
     public String hello(@PathVariable(value = "value") String value) {
         return "Hello " + value + "!";
     }
+
+    @GetMapping("/samples/dto/{value}")
+    public String f(@PathVariable(value = "value") String value) {
+        return "Hello " + value + "!";
+    }
 }
